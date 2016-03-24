@@ -1,0 +1,27 @@
+From 22b5a1937bd10a68388c60dbef9f0a28fca8486c Mon Sep 17 00:00:00 2001
+From: Johannes Schindelin <johannes.schindelin@gmx.de>
+Date: Mon, 7 Dec 2009 17:23:24 +0100
+Subject: [PATCH 6/6] On msysGit, include the whole regex.c
+
+Signed-off-by: Johannes Schindelin <johannes.schindelin@gmx.de>
+---
+ src/softmagic.c |    3 +++
+ 1 files changed, 3 insertions(+), 0 deletions(-)
+
+diff --git a/src/softmagic.c b/src/softmagic.c
+index d8a5675..664af34 100644
+--- a/src/softmagic.c
++++ b/src/softmagic.c
+@@ -41,6 +41,9 @@ FILE_RCSID("@(#)$File: softmagic.c,v 1.138 2009/10/19 13:10:20 christos Exp $")
+ #include <stdlib.h>
+ #include <time.h>
+ 
++/* hack for msysGit */
++#include <regex.c>
++
+ 
+ private int match(struct magic_set *, struct magic *, uint32_t,
+     const unsigned char *, size_t, int);
+-- 
+1.7.3
+

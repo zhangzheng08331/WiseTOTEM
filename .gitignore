@@ -1,0 +1,16 @@
+/bin/git*
+/bin/cpio
+/home
+libexec/git-core
+/share/git-gui
+/share/gitk
+/share/git-core
+/lib/Error.pm
+/lib/Git.pm
+/lib/Git/*.pm
+/lib/Git/SVN/
+/lib/perl5/5.8.8/CPAN/Config.pm*
+/share/gitweb/
+
+# see https://github.com/msysgit/msysgit/wiki/Vagrant
+/.vagrant/

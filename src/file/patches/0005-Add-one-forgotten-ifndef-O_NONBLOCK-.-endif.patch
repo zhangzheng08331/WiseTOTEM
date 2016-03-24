@@ -1,0 +1,27 @@
+From 8c600c9ec99f82dae6c6bef51095ae51968c6a0b Mon Sep 17 00:00:00 2001
+From: Johannes Schindelin <johannes.schindelin@gmx.de>
+Date: Mon, 7 Dec 2009 17:22:54 +0100
+Subject: [PATCH 5/6] Add one forgotten #ifndef O_NONBLOCK ... #endif
+
+Signed-off-by: Johannes Schindelin <johannes.schindelin@gmx.de>
+---
+ src/magic.c |    2 ++
+ 1 files changed, 2 insertions(+), 0 deletions(-)
+
+diff --git a/src/magic.c b/src/magic.c
+index d49c29a..6aac84a 100644
+--- a/src/magic.c
++++ b/src/magic.c
+@@ -315,7 +315,9 @@ file_or_fd(struct magic_set *ms, const char *inname, int fd)
+ 		int flags = O_RDONLY|O_BINARY;
+ 
+ 		if (stat(inname, &sb) == 0 && S_ISFIFO(sb.st_mode)) {
++#ifdef O_NONBLOCK
+ 			flags |= O_NONBLOCK;
++#endif
+ 			ispipe = 1;
+ 		}
+ 
+-- 
+1.7.3
+

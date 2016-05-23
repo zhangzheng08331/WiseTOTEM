@@ -2,7 +2,14 @@
 <html>
 	<head>
 		<meta name="layout" content="main"/>
-		<title>Welcome to Grails</title>
+		<title> zz免费资源 </title>
+        	  <meta charset="gbk" />
+		  <meta name="baidu-site-verification" content="MfXZNl5oj2" />
+		  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+		  <meta name="generator" content="editplus" />
+		  <meta name="author" content="zz" />
+		  <meta name="keywords" content="软件,下载,绿色,软件下载,驱动下载,工具下载,免费软件下载,破解,破解论坛,破解软件，共享软件下载,最新免费资源,免费网站,免费网络,在线免费,free,答案，课后答案。" />
+		  <meta name="description" content="优质的，良好的，免费资源下载站" />
 		<style type="text/css" media="screen">
 			#status {
 				background-color: #eee;

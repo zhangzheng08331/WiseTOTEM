@@ -90,7 +90,7 @@
 	<body>
 
 		<div id="status" role="complementary" style="background-color: cadetblue; ">
-			<a href="netAdress/index">智图腾网址导航</a>
+			<a href="netAdress/index">网址导航</a>
 		</div>
 		<div id="page-body" role="main">
 

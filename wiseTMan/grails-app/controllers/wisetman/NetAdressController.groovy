@@ -3,7 +3,13 @@ package wisetman
 class NetAdressController {
     def NetAdressService
     def index() {
-        NetAdressService.insertNetAdress()
-        render(view:"index")
+        Map<Integer,List<WebsiteNavigation>> map=NetAdressService.serviceMethod()
+        render(view:"index",model: [websites: map])
     }
+
+    //密
+    def addWebsite(){
+        NetAdressService.insertNetAdress()
+    }
+
 }

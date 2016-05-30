@@ -25,7 +25,7 @@ public class POIUtil {
 
     public static List<Map<Integer,Object>> getDataFromExcel(String filePath)
     {
-        //String filePath = "E:\\123.xlsx";
+        //String filePath = "";
 
         //判断是否为excel类型文件
         if(!filePath.endsWith(".xls")&&!filePath.endsWith(".xlsx"))

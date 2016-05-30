@@ -89,7 +89,7 @@
                 <div id="cate_${webs.key.orderid}" class="sites mod mt10">
                     <ul class="clearfix">
                         <g:each var="web" in="${webs.value}">
-                            <li class="fl site">
+                            <li class="fl site" title="${web.websiteAbstract}">
                                 <a target="_blank" href="${web.websiteURL}" class="clr-black">${web.websiteName}</a>
                             </li>
                         </g:each>

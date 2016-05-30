@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/wiseTMan.iml" filepath="$PROJECT_DIR$/wiseTMan.iml" />
-      <module fileurl="file://$PROJECT_DIR$/wiseTMan-grailsPlugins.iml" filepath="$PROJECT_DIR$/wiseTMan-grailsPlugins.iml" />
     </modules>
   </component>
 </project>

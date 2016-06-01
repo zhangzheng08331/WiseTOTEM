@@ -14,7 +14,7 @@ class WebsiteNavigation {
         cache true
         table 'WebsiteNavigation'
         version false
-        id generator: 'identity', name: 'websiteid'
+        id generator: 'assigned', name: 'websiteid'
 
         websiteid column: 'id'
         websiteName column: 'websiteName'

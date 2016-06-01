@@ -1,5 +1,5 @@
 /* FONT STACK */
-body,
+
 input, select, textarea {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
@@ -36,16 +36,6 @@ html * {
 	margin: 0;
 }
 
-body {
-	background: #ffffff;
-	color: #333333;
-	margin: 0 auto;
-	max-width: 100%;
-	overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
-	   -moz-box-shadow: 0 0 0.3em #255b17;
-	-webkit-box-shadow: 0 0 0.3em #255b17;
-	        box-shadow: 0 0 0.3em #255b17;
-}
 
 #grailsLogo {
 	background-color: #abbf78;

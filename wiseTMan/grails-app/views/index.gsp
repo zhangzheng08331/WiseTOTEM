@@ -84,10 +84,13 @@
             margin-top: 0;
         }
     }
+    .jsk-with-topbar-fixed-top {
+        padding-top: 81px;
+    }
     </style>
 </head>
 
-<body>
+<body class="jsk-with-topbar-fixed-top">
 
 <div id="status" role="complementary" style="background-color: chartreuse;width:100%">
     <a href="netAdress/index">zz网址导航</a>

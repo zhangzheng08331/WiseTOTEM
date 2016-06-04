@@ -93,7 +93,7 @@
 <body class="jsk-with-topbar-fixed-top">
 
 <div id="status" role="complementary" style="background-color: chartreuse;width:100%">
-    <a href="netAdress/index">zz网址导航</a>
+    <a href="webNavagator/index">zz网址导航</a>
 </div>
 
 <div id="page-body" role="main">

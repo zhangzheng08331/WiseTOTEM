@@ -1,6 +1,6 @@
 package wisetman
 
-class webNavagatorController {
+class WebNavagatorController {
     def NetAdressService
     def index() {
         Map<Integer,List<WebsiteNavigation>> map=NetAdressService.serviceMethod()

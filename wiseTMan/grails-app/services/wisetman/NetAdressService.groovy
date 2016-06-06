@@ -55,8 +55,19 @@ class NetAdressService{
      * 批量插入网址
      */
     def insertNetAdress(){
-        POIUtil pUtil=new POIUtil()
-        List<Map<Integer,Object>>  list=pUtil.getDataFromExcel("D:\\wise\\websiteNavigate.xlsx")
+        POIUtil pUtil=null;
+        String filePath="D:\\wise\\websiteNavigate.xlsx"
+        if(!filePath.endsWith(".xls")&&!filePath.endsWith(".xlsx"))
+        {
+            System.out.println("文件不是excel类型");
+        }
+        String afterFix=filePath.split("\\.")[1];
+        if(afterFix.equals("xls")){
+            pUtil=  new POI03Util(filePath)
+        }else{
+            pUtil=  new POI07Util(filePath)
+        }
+        List<Map<Integer,Object>>  list=pUtil.DataFromExcel()
         list.each { map->
             def websiteNavigation=new WebsiteNavigation()
             websiteNavigation.websiteAbstract=map.get(0)

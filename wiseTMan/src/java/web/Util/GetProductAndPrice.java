@@ -64,6 +64,13 @@ public class GetProductAndPrice {
 
                 if("买二送1".equals(pstrs[1])){
                     //买二送一还没想出来
+                    if(entry.getValue().size()%3==0){
+                        int CC=entry.getValue().size()/3;
+                        System.out.println(pstrs[0]+",数量:"+entry.getValue().size()+"小计："+sizezz*(entry.getValue().size()-CC));
+                    }else{
+                        int CC=(entry.getValue().size()-1)/3;
+                        System.out.println(pstrs[0]+",数量:"+entry.getValue().size()+"小计："+sizezz*(entry.getValue().size()-CC));
+                    }
                 }else{
                     System.out.println(pstrs[0]+",数量:"+entry.getValue().size()+"小计："+sizezz*entry.getValue().size()*0.9);
                 }

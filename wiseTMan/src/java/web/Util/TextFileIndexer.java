@@ -17,7 +17,7 @@ import java.util.Date;
  * Created by zhengzhang on 2016/6/11.
  */
 public class TextFileIndexer {
-    public static void main(String[] args) {
+    public static void aa() {
         File fileDir = new File("D:\\source");
         File IndexDir = new File("D:\\index");
         Directory dir = null;
@@ -39,7 +39,7 @@ public class TextFileIndexer {
                             + "正在被索引....");
                     String temp = FileReaderAll(textFiles[i].getCanonicalPath(),
                             "GBK");
-                    System.out.println(temp);
+                    //System.out.println(temp);
                     Document document = new Document();
                     Field FieldPath = new Field("path", textFiles[i].getPath(),
                             Field.Store.YES, Field.Index.NO);
@@ -62,11 +62,11 @@ public class TextFileIndexer {
 
         //测试一下索引的时间
         long endTime = new Date().getTime();
-        System.out
-                .println("这花费了"
-                        + (endTime - startTime)
-                        + " 毫秒来把文档增加到索引里面去!"
-                        + fileDir.getPath());
+//        System.out
+//                .println("这花费了"
+//                        + (endTime - startTime)
+//                        + " 毫秒来把文档增加到索引里面去!"
+//                        + fileDir.getPath());
     }
 
     public static String FileReaderAll(String FileName, String charset)

@@ -1,5 +1,7 @@
 package web.Util;
 
+import org.junit.Test;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -48,8 +50,8 @@ public class GetProductAndPrice {
         }
         return map2;
     }
-
-    public static void main(String[] args){
+    @Test
+    public  void test(){
         setMap("面包","p00001","5","");
         setMap("牛奶","p00002","8","买二送1");
         setMap("茄子","p00003","7","九折");

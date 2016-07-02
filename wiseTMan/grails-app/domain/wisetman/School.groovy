@@ -1,8 +1,9 @@
 package wisetman
-
+import grails.rest.*
 /**
  * Created by zhangzheng on 2016/6/26.
  */
+@Resource(uri='/books', formats=['json', 'xml'])
 class School {
     Integer id
     String name
